@@ -393,6 +393,15 @@
                     </li>
                 </ul>
             </div>
+            <form class="mailing-footer">
+                <p class="mailing-offer-text">Подпишитесь на рассылку</p>
+
+                <label for="" class="footer-form-field">
+                    <div class="footer-form-wrapper">
+                        <input type="email" class="footer-form-input" name="user-email">
+                    </div>
+                </label>
+            </form>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -402,6 +411,56 @@
                     <use href="./img/sprite.svg#modal-icon"></use>
                 </svg>
             </button>
+            <form action="" class="modal-form">
+                <p class="modal-form-head">
+                    Оставьте свои данные, мы вам перезвоним
+                </p>
+
+                <label for="" class="modal-form-field modal-form-field-text">Имя
+                    <div class="modal-form-wrapper">
+                        <input type="text" class="modal-form-input" name="user-name" minlength="2"
+                            pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Имя должно содержать символы латиницы или кириллицы"
+                            required />
+                        <svg class="modal-form-icon modal-form-icon-name">
+                            <use href="./img/sprite.svg#icon-name-modal"></use>
+                        </svg>
+                    </div>
+                </label>
+
+                <label for="" class="modal-form-field modal-form-field-text">Телефон
+                    <div class="modal-form-wrapper">
+                        <input type="tel" class="modal-form-input" name="user-tel" title="099-000-00-00"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required />
+                        <svg class="modal-form-icon modal-form-icon-tel">
+                            <use href="./img/sprite.svg#icon-tel-modal"></use>
+                        </svg>
+                    </div>
+                </label>
+
+                <label for="" class="modal-form-field modal-form-field-text">Почта
+                    <div class="modal-form-wrapper">
+                        <input type="mail" class="modal-form-input" name="user-mail" pattern="[^ @]*@[^ @]*"
+                            title="qwerty123@gmail.com" required />
+                        <svg class="modal-form-icon modal-form-icon-mail">
+                            <use href="./img/sprite.svg#icon-mail-modal"></use>
+                        </svg>
+                    </div>
+                </label>
+
+
+                <label for="" class="modal-form-field modal-form-field-text">Комментарий
+                    <div class="modal-message-border">
+                        <textarea class="modal-form-message" name="user-message" placeholder="Введите текст"></textarea>
+                    </div>
+                </label>
+
+                <input type="checkbox" id="policy-accept" class="modal-form-checkbox visually-hidden" />
+                <label for="policy-accept" class="modal-form-checkbox-label">Соглашаюсь с рассылкой и принимаю&nbsp;
+                    <a href="#">Условия договора</a>
+                </label>
+
+                <button class="modal-form-button" type-submit>Отправить</button>
+            </form>
         </div>
     </div>
 </body>
